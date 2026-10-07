@@ -1,0 +1,89 @@
+{
+  "model": "/content/drive/MyDrive/3dof_evader/3DOF_Fuze_Gudum_Project/3DOF_Fuze_Gudum_Training_Source/models/evader/evader_e1_fixed_pn6g_refine01/best_model.zip",
+  "hit_radius_m": 10.0,
+  "navigation_constant": 4.0,
+  "suggested_next_training_limit_g": 7.0,
+  "results": [
+    {
+      "pn_max_command_g": 5.0,
+      "status": "survived: passed missile",
+      "survived": true,
+      "minimum_range_m": 155.26678733795146,
+      "terminal_time_s": 7.459999999999929,
+      "total_reward": 40.68512252137401,
+      "decision_steps": 75
+    },
+    {
+      "pn_max_command_g": 6.0,
+      "status": "survived: passed missile",
+      "survived": true,
+      "minimum_range_m": 71.91723457916183,
+      "terminal_time_s": 7.499999999999928,
+      "total_reward": 39.78609186821486,
+      "decision_steps": 75
+    },
+    {
+      "pn_max_command_g": 7.0,
+      "status": "intercepted",
+      "survived": false,
+      "minimum_range_m": 4.446619577881484,
+      "terminal_time_s": 7.4799999999999285,
+      "total_reward": -32.989132980808286,
+      "decision_steps": 75
+    },
+    {
+      "pn_max_command_g": 8.0,
+      "status": "intercepted",
+      "survived": false,
+      "minimum_range_m": 0.0009887947399029558,
+      "terminal_time_s": 7.4799999999999285,
+      "total_reward": -34.62807571659869,
+      "decision_steps": 75
+    },
+    {
+      "pn_max_command_g": 10.0,
+      "status": "intercepted",
+      "survived": false,
+      "minimum_range_m": 0.0009887947399029558,
+      "terminal_time_s": 7.4799999999999285,
+      "total_reward": -34.62807571659869,
+      "decision_steps": 75
+    },
+    {
+      "pn_max_command_g": 12.0,
+      "status": "intercepted",
+      "survived": false,
+      "minimum_range_m": 0.0009887947399029558,
+      "terminal_time_s": 7.4799999999999285,
+      "total_reward": -34.62807571659869,
+      "decision_steps": 75
+    },
+    {
+      "pn_max_command_g": 15.0,
+      "status": "intercepted",
+      "survived": false,
+      "minimum_range_m": 0.0009887947399029558,
+      "terminal_time_s": 7.4799999999999285,
+      "total_reward": -34.62807571659869,
+      "decision_steps": 75
+    },
+    {
+      "pn_max_command_g": 20.0,
+      "status": "intercepted",
+      "survived": false,
+      "minimum_range_m": 0.0009887947399029558,
+      "terminal_time_s": 7.4799999999999285,
+      "total_reward": -34.62807571659869,
+      "decision_steps": 75
+    },
+    {
+      "pn_max_command_g": 30.0,
+      "status": "intercepted",
+      "survived": false,
+      "minimum_range_m": 0.0009887947399029558,
+      "terminal_time_s": 7.4799999999999285,
+      "total_reward": -34.62807571659869,
+      "decision_steps": 75
+    }
+  ]
+}

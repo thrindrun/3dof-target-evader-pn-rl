@@ -1,0 +1,13 @@
+case,paired_outcome,episodes
+constant_turn_5km,both_hit,220
+constant_turn_5km,both_miss,18
+constant_turn_5km,ct_refine00_only,1
+constant_turn_5km,source_refine03_only,1
+constant_turn_6km,both_hit,84
+constant_turn_6km,both_miss,153
+constant_turn_6km,ct_refine00_only,1
+constant_turn_6km,source_refine03_only,2
+sinusoidal_8km,both_hit,113
+sinusoidal_8km,both_miss,7
+straight_8km,both_hit,117
+straight_8km,both_miss,3

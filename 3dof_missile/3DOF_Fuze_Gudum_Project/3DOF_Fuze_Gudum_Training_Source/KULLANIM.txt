@@ -1,0 +1,36 @@
+3DOF FUZE GUDUMU - EGITIM PAKETI HIZLI KULLANIM
+================================================
+
+1) Zip'i bir klasore cikartin.
+
+2) PowerShell acip klasore girin:
+   cd C:\Projects\3DOF_Fuze_Gudum_Training_Source
+
+3) Kurulum:
+   .\setup.bat
+
+4) Kaynak dogrulamasi:
+   .\verify_source.bat
+
+5) Butun egitim secenekleri:
+   .\.venv\Scripts\python.exe .\train.py --help
+
+6) Paketli modelin adimi ve ag yapisi:
+   .\.venv\Scripts\python.exe .\inspect_model.py
+
+7) Egitim baslatmadan deney komutlarini gor:
+   .\examples\run_learning_study_dry.ps1
+
+8) Yeni actor/critic ile sifirdan V6 ornegi:
+   .\examples\train_fresh_v6.ps1
+
+9) Paketteki best modelden ayri bir stage'e devam:
+   .\examples\continue_packaged_best.ps1
+
+DIKKAT
+------
+- train_fresh_v6.ps1 gercek ve uzun bir egitim baslatir.
+- Ctrl+C, calisan egitimi keser. Son checkpoint'ler checkpoints klasorunde kalir.
+- best_model.zip dogrulamada secilen en iyi modeldir; final_model.zip son adimdir.
+- Son teslim modeli 400008 adimlik bir checkpoint'ten devam ederek egitilmistir.
+  Ayrintilar TRAINING_README.md ve training_metadata.json icindedir.

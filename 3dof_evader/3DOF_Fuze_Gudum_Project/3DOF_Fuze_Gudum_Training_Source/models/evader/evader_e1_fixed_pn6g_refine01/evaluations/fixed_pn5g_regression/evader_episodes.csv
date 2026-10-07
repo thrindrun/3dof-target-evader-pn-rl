@@ -1,0 +1,2 @@
+episode,seed,status,survived,minimum_range_m,terminal_time_s,episode_reward,mean_squared_action
+0,2100000,survived: passed missile,True,155.26678733795146,7.459999999999929,40.68512252137401,0.28585605951646964

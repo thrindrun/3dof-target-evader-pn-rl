@@ -1,0 +1,111 @@
+{
+  "model": "/content/drive/MyDrive/3dof_evader/3DOF_Fuze_Gudum_Project/3DOF_Fuze_Gudum_Training_Source/models/evader/evader_e3_random050_pn12p7g_tau020_refine01/best_model.zip",
+  "primary_pn_limit_g": 12.7,
+  "navigation_constant": 4.0,
+  "hit_radius_m": 10.0,
+  "randomized": true,
+  "randomization_scale": 0.5,
+  "episodes_per_limit": 500,
+  "required_survival_rate": 0.9,
+  "suggested_next_training_limit_g": 12.7,
+  "results": [
+    {
+      "pn_max_command_g": 12.5,
+      "episodes": 500,
+      "survival_rate": 0.986,
+      "mean_minimum_range_m": 18.530186626529076,
+      "median_minimum_range_m": 18.69514438257987,
+      "p10_minimum_range_m": 12.356761280273728,
+      "p90_minimum_range_m": 24.459821821485527,
+      "mean_reward": 30.618406512240167,
+      "status_counts": {
+        "survived: passed missile": 493,
+        "intercepted": 7
+      }
+    },
+    {
+      "pn_max_command_g": 12.6,
+      "episodes": 500,
+      "survival_rate": 0.926,
+      "mean_minimum_range_m": 16.61041517903537,
+      "median_minimum_range_m": 16.828303728053733,
+      "p10_minimum_range_m": 10.442998542732683,
+      "p90_minimum_range_m": 22.53867819773572,
+      "mean_reward": 26.314231695449156,
+      "status_counts": {
+        "survived: passed missile": 463,
+        "intercepted": 37
+      }
+    },
+    {
+      "pn_max_command_g": 12.7,
+      "episodes": 500,
+      "survival_rate": 0.816,
+      "mean_minimum_range_m": 14.711931818369285,
+      "median_minimum_range_m": 14.977616810196892,
+      "p10_minimum_range_m": 8.525706252176986,
+      "p90_minimum_range_m": 20.6361343689308,
+      "mean_reward": 18.990132632190026,
+      "status_counts": {
+        "intercepted": 92,
+        "survived: passed missile": 408
+      }
+    },
+    {
+      "pn_max_command_g": 12.8,
+      "episodes": 500,
+      "survival_rate": 0.7,
+      "mean_minimum_range_m": 12.83588795838118,
+      "median_minimum_range_m": 13.158455922692792,
+      "p10_minimum_range_m": 6.768678019998772,
+      "p90_minimum_range_m": 18.80739680967238,
+      "mean_reward": 11.298710478594476,
+      "status_counts": {
+        "intercepted": 150,
+        "survived: passed missile": 350
+      }
+    },
+    {
+      "pn_max_command_g": 12.9,
+      "episodes": 500,
+      "survival_rate": 0.582,
+      "mean_minimum_range_m": 10.981325248032405,
+      "median_minimum_range_m": 11.324252099875881,
+      "p10_minimum_range_m": 5.008228152910714,
+      "p90_minimum_range_m": 16.981918253300893,
+      "mean_reward": 3.4836265052531634,
+      "status_counts": {
+        "intercepted": 209,
+        "survived: passed missile": 291
+      }
+    },
+    {
+      "pn_max_command_g": 13.0,
+      "episodes": 500,
+      "survival_rate": 0.438,
+      "mean_minimum_range_m": 9.148663231556464,
+      "median_minimum_range_m": 9.433937450027909,
+      "p10_minimum_range_m": 3.1633030910173723,
+      "p90_minimum_range_m": 15.163222834578807,
+      "mean_reward": -5.883929458252045,
+      "status_counts": {
+        "intercepted": 281,
+        "survived: passed missile": 219
+      }
+    },
+    {
+      "pn_max_command_g": 13.5,
+      "episodes": 500,
+      "survival_rate": 0.004,
+      "mean_minimum_range_m": 2.0765569168910516,
+      "median_minimum_range_m": 0.4326472929468499,
+      "p10_minimum_range_m": 0.012645346078767546,
+      "p90_minimum_range_m": 6.5058657310609345,
+      "mean_reward": -34.7084694017886,
+      "status_counts": {
+        "intercepted": 498,
+        "survived: passed missile": 2
+      }
+    }
+  ]
+}

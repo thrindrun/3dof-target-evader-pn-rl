@@ -1,0 +1,348 @@
+3DOF FÜZE GÜDÜMÜ — KURULUM VE KULLANIM
+
+============================================================
+
+1. PAKETİN ÇIKARTILMASI
+   ============================================================
+
+Programı sıkıştırılmış ZIP klasörünün içerisinden çalıştırmayınız.
+
+ZIP dosyasına sağ tıklayıp:
+
+```
+Tümünü Ayıkla / Extract All
+```
+
+seçeneğini kullanın. Ardından çıkartılan
+3DOF_Fuze_Gudum_Final_Main klasörünü açın.
+
+============================================================
+2. İLK KURULUM
+==============
+
+Programın çalışabilmesi için bilgisayarda Python bulunmalıdır.
+Proje Python 3.13 ile hazırlanmıştır.
+
+Çıkartılan proje klasörünün içerisinde boş bir alana sağ
+tıklayın ve "Terminalde Aç" seçeneğini seçin.
+
+Terminalde aşağıdaki komutu çalıştırın:
+
+```
+.\setup.bat
+```
+
+Alternatif olarak setup.bat dosyasına çift tıklanabilir.
+
+Bu işlem:
+
+* .venv isimli bir Python sanal ortamı oluşturur.
+* NumPy ve Matplotlib paketlerini kurar.
+* PyTorch'u kurar.
+* Gymnasium'u kurar.
+* Stable-Baselines3 paketini kurar.
+
+Özellikle PyTorch indirildiği için ilk kurulum birkaç dakika
+sürebilir. İnternet bağlantısı gereklidir.
+
+Kurulum başarıyla tamamlandığında terminalde şu mesaj görülür:
+
+```
+Kurulum tamamlandi. run.bat ile calistirabilirsiniz.
+```
+
+Kurulum yalnızca ilk kullanımda yapılmalıdır.
+
+============================================================
+3. SADECE PPO İLE ÇALIŞTIRMA
+============================
+
+Proje klasöründe terminal açın ve şu komutu çalıştırın:
+
+```
+.\.venv\Scripts\python.exe .\main.py --controller ppo
+```
+
+Bu komut, eğitilmiş 23 girdili PPO modelini yükler ve simülasyonu
+yalnızca PPO güdüm algoritmasıyla çalıştırır.
+
+Başarılı çalışmada başlangıç bilgilerinde şunlar görülmelidir:
+
+```
+Kontrolcü       : ppo
+PPO observation : v2 (23 girdi)
+```
+
+Simülasyon sonunda PPO için durum, terminal zamanı, adım-içi
+en yakın yaklaşma mesafesi (CPA), maksimum ivme komutu ve RMS
+ivme komutu yazdırılır.
+
+============================================================
+4. PN İLE ÇALIŞTIRMA
+====================
+
+Yalnızca PN güdümünü çalıştırmak için:
+
+```
+.\.venv\Scripts\python.exe .\main.py --controller pn
+```
+
+============================================================
+5. PPO VE PN'Yİ AYNI ANDA KARŞILAŞTIRMA
+=======================================
+
+Aynı başlangıç koşullarında PPO ve PN karşılaştırması için:
+
+```
+.\.venv\Scripts\python.exe .\main.py --controller both
+```
+
+Bu modda iki füze aynı konum, hız, yön, aerodinamik ve itki
+parametreleriyle aynı hedefe gönderilir. Füzeler arasındaki temel
+fark yalnızca kullanılan güdüm algoritmasıdır.
+
+PPO ve PN aynı 10 Hz kontrol frekansında çalıştırılır.
+
+============================================================
+6. VURUŞ YARIÇAPININ DEĞİŞTİRİLMESİ
+===================================
+
+Varsayılan vuruş yarıçapı 1 metredir.
+
+10 metre vuruş kriteriyle PPO çalıştırmak için:
+
+```
+.\.venv\Scripts\python.exe .\main.py --controller ppo --hit-radius 10
+```
+
+10 metre kriteriyle PPO ve PN karşılaştırması için:
+
+```
+.\.venv\Scripts\python.exe .\main.py --controller both --hit-radius 10
+```
+
+============================================================
+7. RUN.BAT DOSYASI
+==================
+
+run.bat dosyasına çift tıklanırsa main.py içerisindeki varsayılan
+GUIDANCE_MODE değeri kullanılır.
+
+Varsayılan ayar:
+
+```
+GUIDANCE_MODE = "both"
+```
+
+olduğu için run.bat başlangıçta PPO ve PN'yi birlikte çalıştırır.
+
+run.bat dosyasının yalnızca PPO çalıştırmasını istiyorsanız main.py
+dosyasını açıp şu satırı bulun:
+
+```
+GUIDANCE_MODE = "both"
+```
+
+ve şu şekilde değiştirin:
+
+```
+GUIDANCE_MODE = "ppo"
+```
+
+============================================================
+8. SENARYO PARAMETRELERİNİN DEĞİŞTİRİLMESİ
+==========================================
+
+Senaryoyu değiştirmek için main.py dosyasının başındaki:
+
+```
+KULLANICI AYARLARI
+```
+
+bölümünü düzenleyin.
+
+Başlıca ayarlar:
+
+```
+TARGET_N_E_ALT_M
+MISSILE_N_E_ALT_M
+TARGET_SPEED_MPS
+MISSILE_SPEED_MPS
+TARGET_HEADING_DEG
+TARGET_FLIGHT_PATH_DEG
+TARGET_MANEUVER_KIND
+TARGET_HEADING_RATE_DEG_S
+TARGET_FLIGHT_PATH_RATE_DEG_S
+MISSILE_ATTITUDE_MODE
+MISSILE_HEADING_DEG
+MISSILE_FLIGHT_PATH_DEG
+HIT_RADIUS_M
+FINAL_TIME_S
+```
+
+Konum değerleri şu sırada girilir:
+
+```
+(North, East, irtifa)
+```
+
+Bütün konumların birimi metredir.
+
+============================================================
+9. FÜZENİN BAŞLANGIÇ YÖNÜ
+=========================
+
+Varsayılan ayar:
+
+```
+MISSILE_ATTITUDE_MODE = "explicit"
+```
+
+şeklindedir.
+
+Bu durumda füzenin ilk hız vektörü doğrudan:
+
+```
+MISSILE_HEADING_DEG
+MISSILE_FLIGHT_PATH_DEG
+```
+
+değerleriyle belirlenir. Program füzenin burnunu otomatik olarak
+hedefe çevirmemektedir.
+
+Füzenin hedef doğrultusunda başlatılması istenirse:
+
+```
+MISSILE_ATTITUDE_MODE = "toward_target"
+```
+
+olarak değiştirilebilir.
+
+İstenirse başlangıç yön hataları şu parametrelerle eklenebilir:
+
+```
+MISSILE_AIM_AZIMUTH_ERROR_DEG
+MISSILE_AIM_ELEVATION_ERROR_DEG
+```
+
+============================================================
+10. HEDEF MANEVRALARI
+=====================
+
+TARGET_MANEUVER_KIND için kullanılabilecek değerler:
+
+```
+"straight"       : Düz uçuş
+"constant_turn"  : Sabit dönüş
+"sinusoidal"     : Sinüzoidal manevra
+"random_smooth"  : Düzgün rastgele 3B manevra
+```
+
+Örnek:
+
+```
+TARGET_MANEUVER_KIND = "constant_turn"
+TARGET_HEADING_RATE_DEG_S = 12.0
+TARGET_FLIGHT_PATH_RATE_DEG_S = 0.0
+```
+
+============================================================
+11. SONUÇ DOSYALARI
+===================
+
+Simülasyon sonuçları varsayılan olarak şu klasöre kaydedilir:
+
+```
+results\final_default_comparison
+```
+
+Oluşturulan dosyalar:
+
+```
+trajectory_comparison.png
+```
+
+3B yörüngeyi, bağıl menzili, araç hızlarını ve normal ivme
+komutlarını gösterir.
+
+```
+history.csv
+```
+
+Her fizik adımındaki füze ve hedef durumlarını, bağıl menzili ve
+ivme komutlarını içerir.
+
+```
+summary.json
+```
+
+Senaryo parametrelerini ve PPO/PN sonuçlarını düzenli biçimde
+saklar.
+
+============================================================
+12. GRAFİK PENCERESİ OLMADAN ÇALIŞTIRMA
+=======================================
+
+Grafik penceresi açılmadan sonuç üretmek için:
+
+```
+.\.venv\Scripts\python.exe .\main.py --controller ppo --no-show
+```
+
+Dosya çıktılarının da oluşturulmaması istenirse:
+
+```
+.\.venv\Scripts\python.exe .\main.py --controller ppo --no-show --no-save
+```
+
+============================================================
+13. SIK KARŞILAŞILAN HATALAR
+============================
+
+"python bulunamadı" veya "py bulunamadı" hatası:
+
+Python 3.13 kurun ve kurulum sırasında "Add Python to PATH"
+seçeneğini işaretleyin.
+
+"stable_baselines3 bulunamadı" hatası:
+
+Proje klasöründe tekrar şu komutu çalıştırın:
+
+```
+.\setup.bat
+```
+
+Model bulunamadı hatası:
+
+Aşağıdaki dosyanın mevcut olduğunu kontrol edin:
+
+```
+models\fresh_cpa_v6_hardpocket_7p5m_300k\best_model.zip
+```
+
+Programın ZIP içerisinden değil, çıkartılmış normal klasörden
+çalıştırıldığından emin olun.
+
+============================================================
+14. VARSAYILAN DOĞRULAMA SONUCU
+===============================
+
+Final paket gerçek modelle doğrulanmıştır.
+
+Varsayılan 5.5 km, sabit dönüşlü hedef ve 1 metre vuruş
+senaryosunda yaklaşık sonuçlar:
+
+```
+PPO:
+    Durum       : hit
+    Terminal    : 12.999 s
+    Adım-içi CPA: 0.495 m
+
+PN:
+    Durum       : hit
+    Terminal    : 13.294 s
+    Adım-içi CPA: 0.007 m
+```
+
+Bilgisayar ve sayısal kütüphane sürümlerine bağlı olarak son
+basamaklarda küçük farklılıklar görülebilir.

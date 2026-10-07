@@ -1,0 +1,260 @@
+{
+  "model": "/content/drive/MyDrive/3dof_evader/3DOF_Fuze_Gudum_Project/3DOF_Fuze_Gudum_Training_Source/models/evader/evader_e1_fixed_pn12g_refine01/best_model.zip",
+  "primary_pn_limit_g": 12.0,
+  "navigation_constant": 4.0,
+  "hit_radius_m": 10.0,
+  "randomized": false,
+  "randomization_scale": 1.0,
+  "episodes_per_limit": 1,
+  "required_survival_rate": 1.0,
+  "suggested_next_training_limit_g": 12.0,
+  "results": [
+    {
+      "pn_max_command_g": 5.0,
+      "episodes": 1,
+      "survival_rate": 1.0,
+      "mean_minimum_range_m": 192.04154960267738,
+      "median_minimum_range_m": 192.04154960267738,
+      "p10_minimum_range_m": 192.04154960267738,
+      "p90_minimum_range_m": 192.04154960267738,
+      "mean_reward": 40.473115582379656,
+      "status_counts": {
+        "survived: passed missile": 1
+      }
+    },
+    {
+      "pn_max_command_g": 6.0,
+      "episodes": 1,
+      "survival_rate": 1.0,
+      "mean_minimum_range_m": 153.97880331287152,
+      "median_minimum_range_m": 153.97880331287152,
+      "p10_minimum_range_m": 153.97880331287152,
+      "p90_minimum_range_m": 153.97880331287152,
+      "mean_reward": 40.01388200673449,
+      "status_counts": {
+        "survived: passed missile": 1
+      }
+    },
+    {
+      "pn_max_command_g": 7.0,
+      "episodes": 1,
+      "survival_rate": 1.0,
+      "mean_minimum_range_m": 119.70047709440516,
+      "median_minimum_range_m": 119.70047709440516,
+      "p10_minimum_range_m": 119.70047709440516,
+      "p90_minimum_range_m": 119.70047709440516,
+      "mean_reward": 39.68153683947386,
+      "status_counts": {
+        "survived: passed missile": 1
+      }
+    },
+    {
+      "pn_max_command_g": 8.0,
+      "episodes": 1,
+      "survival_rate": 1.0,
+      "mean_minimum_range_m": 89.20156643231427,
+      "median_minimum_range_m": 89.20156643231427,
+      "p10_minimum_range_m": 89.20156643231427,
+      "p90_minimum_range_m": 89.20156643231427,
+      "mean_reward": 39.36819535422457,
+      "status_counts": {
+        "survived: passed missile": 1
+      }
+    },
+    {
+      "pn_max_command_g": 8.5,
+      "episodes": 1,
+      "survival_rate": 1.0,
+      "mean_minimum_range_m": 75.2767631541529,
+      "median_minimum_range_m": 75.2767631541529,
+      "p10_minimum_range_m": 75.2767631541529,
+      "p90_minimum_range_m": 75.2767631541529,
+      "mean_reward": 39.17579512259839,
+      "status_counts": {
+        "survived: passed missile": 1
+      }
+    },
+    {
+      "pn_max_command_g": 9.0,
+      "episodes": 1,
+      "survival_rate": 1.0,
+      "mean_minimum_range_m": 62.22674097040861,
+      "median_minimum_range_m": 62.22674097040861,
+      "p10_minimum_range_m": 62.22674097040861,
+      "p90_minimum_range_m": 62.22674097040861,
+      "mean_reward": 38.87136524992483,
+      "status_counts": {
+        "survived: passed missile": 1
+      }
+    },
+    {
+      "pn_max_command_g": 9.5,
+      "episodes": 1,
+      "survival_rate": 1.0,
+      "mean_minimum_range_m": 49.92872947270337,
+      "median_minimum_range_m": 49.92872947270337,
+      "p10_minimum_range_m": 49.92872947270337,
+      "p90_minimum_range_m": 49.92872947270337,
+      "mean_reward": 38.1638576507704,
+      "status_counts": {
+        "survived: passed missile": 1
+      }
+    },
+    {
+      "pn_max_command_g": 10.0,
+      "episodes": 1,
+      "survival_rate": 1.0,
+      "mean_minimum_range_m": 38.5283904284566,
+      "median_minimum_range_m": 38.5283904284566,
+      "p10_minimum_range_m": 38.5283904284566,
+      "p90_minimum_range_m": 38.5283904284566,
+      "mean_reward": 37.0089578830624,
+      "status_counts": {
+        "survived: passed missile": 1
+      }
+    },
+    {
+      "pn_max_command_g": 11.0,
+      "episodes": 1,
+      "survival_rate": 1.0,
+      "mean_minimum_range_m": 18.045857021784286,
+      "median_minimum_range_m": 18.045857021784286,
+      "p10_minimum_range_m": 18.045857021784286,
+      "p90_minimum_range_m": 18.045857021784286,
+      "mean_reward": 31.690914763798467,
+      "status_counts": {
+        "survived: passed missile": 1
+      }
+    },
+    {
+      "pn_max_command_g": 12.0,
+      "episodes": 1,
+      "survival_rate": 0.0,
+      "mean_minimum_range_m": 3.6336494834518174,
+      "median_minimum_range_m": 3.6336494834518174,
+      "p10_minimum_range_m": 3.6336494834518174,
+      "p90_minimum_range_m": 3.6336494834518174,
+      "mean_reward": -33.98153005684599,
+      "status_counts": {
+        "intercepted": 1
+      }
+    },
+    {
+      "pn_max_command_g": 13.0,
+      "episodes": 1,
+      "survival_rate": 0.0,
+      "mean_minimum_range_m": 0.0010837470754917978,
+      "median_minimum_range_m": 0.0010837470754917978,
+      "p10_minimum_range_m": 0.0010837470754917978,
+      "p90_minimum_range_m": 0.0010837470754917978,
+      "mean_reward": -35.29080412061152,
+      "status_counts": {
+        "intercepted": 1
+      }
+    },
+    {
+      "pn_max_command_g": 14.0,
+      "episodes": 1,
+      "survival_rate": 0.0,
+      "mean_minimum_range_m": 0.003242088958625561,
+      "median_minimum_range_m": 0.003242088958625561,
+      "p10_minimum_range_m": 0.003242088958625561,
+      "p90_minimum_range_m": 0.003242088958625561,
+      "mean_reward": -35.29124943957337,
+      "status_counts": {
+        "intercepted": 1
+      }
+    },
+    {
+      "pn_max_command_g": 15.0,
+      "episodes": 1,
+      "survival_rate": 0.0,
+      "mean_minimum_range_m": 0.003242088958625561,
+      "median_minimum_range_m": 0.003242088958625561,
+      "p10_minimum_range_m": 0.003242088958625561,
+      "p90_minimum_range_m": 0.003242088958625561,
+      "mean_reward": -35.29124943957337,
+      "status_counts": {
+        "intercepted": 1
+      }
+    },
+    {
+      "pn_max_command_g": 16.0,
+      "episodes": 1,
+      "survival_rate": 0.0,
+      "mean_minimum_range_m": 0.003242088958625561,
+      "median_minimum_range_m": 0.003242088958625561,
+      "p10_minimum_range_m": 0.003242088958625561,
+      "p90_minimum_range_m": 0.003242088958625561,
+      "mean_reward": -35.29124943957337,
+      "status_counts": {
+        "intercepted": 1
+      }
+    },
+    {
+      "pn_max_command_g": 17.0,
+      "episodes": 1,
+      "survival_rate": 0.0,
+      "mean_minimum_range_m": 0.003242088958625561,
+      "median_minimum_range_m": 0.003242088958625561,
+      "p10_minimum_range_m": 0.003242088958625561,
+      "p90_minimum_range_m": 0.003242088958625561,
+      "mean_reward": -35.29124943957337,
+      "status_counts": {
+        "intercepted": 1
+      }
+    },
+    {
+      "pn_max_command_g": 18.0,
+      "episodes": 1,
+      "survival_rate": 0.0,
+      "mean_minimum_range_m": 0.003242088958625561,
+      "median_minimum_range_m": 0.003242088958625561,
+      "p10_minimum_range_m": 0.003242088958625561,
+      "p90_minimum_range_m": 0.003242088958625561,
+      "mean_reward": -35.29124943957337,
+      "status_counts": {
+        "intercepted": 1
+      }
+    },
+    {
+      "pn_max_command_g": 19.0,
+      "episodes": 1,
+      "survival_rate": 0.0,
+      "mean_minimum_range_m": 0.003242088958625561,
+      "median_minimum_range_m": 0.003242088958625561,
+      "p10_minimum_range_m": 0.003242088958625561,
+      "p90_minimum_range_m": 0.003242088958625561,
+      "mean_reward": -35.29124943957337,
+      "status_counts": {
+        "intercepted": 1
+      }
+    },
+    {
+      "pn_max_command_g": 20.0,
+      "episodes": 1,
+      "survival_rate": 0.0,
+      "mean_minimum_range_m": 0.003242088958625561,
+      "median_minimum_range_m": 0.003242088958625561,
+      "p10_minimum_range_m": 0.003242088958625561,
+      "p90_minimum_range_m": 0.003242088958625561,
+      "mean_reward": -35.29124943957337,
+      "status_counts": {
+        "intercepted": 1
+      }
+    },
+    {
+      "pn_max_command_g": 30.0,
+      "episodes": 1,
+      "survival_rate": 0.0,
+      "mean_minimum_range_m": 0.003242088958625561,
+      "median_minimum_range_m": 0.003242088958625561,
+      "p10_minimum_range_m": 0.003242088958625561,
+      "p90_minimum_range_m": 0.003242088958625561,
+      "mean_reward": -35.29124943957337,
+      "status_counts": {
+        "intercepted": 1
+      }
+    }
+  ]
+}

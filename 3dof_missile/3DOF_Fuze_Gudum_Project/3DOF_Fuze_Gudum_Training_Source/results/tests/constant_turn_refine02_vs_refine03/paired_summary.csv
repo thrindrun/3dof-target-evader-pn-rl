@@ -1,0 +1,7 @@
+range_m,outcome,episodes
+5000.0,both_hit,220
+5000.0,both_miss,14
+5000.0,refine02_only,1
+5000.0,refine03_only,5
+6000.0,both_hit,90
+6000.0,both_miss,150

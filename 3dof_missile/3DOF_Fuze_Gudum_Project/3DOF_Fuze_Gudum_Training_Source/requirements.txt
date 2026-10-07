@@ -1,0 +1,9 @@
+﻿numpy
+matplotlib
+gymnasium
+torch
+stable-baselines3
+tensorboard
+ipykernel
+pytest
+ruff

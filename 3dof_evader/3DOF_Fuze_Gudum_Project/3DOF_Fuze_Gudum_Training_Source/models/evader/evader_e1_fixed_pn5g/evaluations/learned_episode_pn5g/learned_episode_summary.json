@@ -1,0 +1,15 @@
+{
+  "model": "/content/drive/MyDrive/3dof_evader/3DOF_Fuze_Gudum_Project/3DOF_Fuze_Gudum_Training_Source/models/evader/evader_e1_fixed_pn5g/best_model.zip",
+  "seed": 2000000,
+  "pn_navigation_constant": 4.0,
+  "pn_max_command_g": 5.0,
+  "hit_radius_m": 10.0,
+  "status": "survived: passed missile",
+  "survived": true,
+  "initial_range_m": 5089.204259999789,
+  "minimum_range_m": 159.82321940995888,
+  "terminal_time_s": 7.939999999999919,
+  "first_intercept_time_s": null,
+  "total_reward": 40.77597842395559,
+  "decision_steps": 80
+}

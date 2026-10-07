@@ -1,0 +1,2 @@
+episode,seed,status,survived,minimum_range_m,terminal_time_s,episode_reward,mean_squared_action
+0,2000000,intercepted,False,0.0007345843461377683,7.919999999999919,-34.618692909765734,0.30036878186510874
